@@ -1,0 +1,11 @@
+# Environment
+.env
+.venv/
+
+# Node
+node_modules/
+
+# Python
+llm_hallucination.egg-info/
+__pycache__/
+*.pyc
