@@ -1,0 +1,57 @@
+{
+  "query": "what is the working day?",
+  "query_context": "- The store operates from 9 AM to 5 PM, Sunday to Saturday.\n- Employees must follow HR leave policy as stated in section 3.",
+  "llm_answer": "The working day is from 9 AM to 5 PM, Sunday to Saturday.",
+  "atomic_facts": [
+    "The working day is from 9 AM to 5 PM.",
+    "The working days are Sunday to Saturday."
+  ],
+  "per_fact": [
+    {
+      "fact": "The working day is from 9 AM to 5 PM.",
+      "retrieved": [
+        {
+          "score": 0.6308789849281311,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.11845993995666504,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "gate_label": "SUPPORTED",
+      "p_yes": 0.8475702163393601,
+      "p_no": 0.15242978366063983,
+      "sim_max": 0.6308789849281311,
+      "uncertainty": 0.3048595673212797,
+      "reasoning": "{\n  \"final_claim\": \"The working day is from 9 AM to 5 PM.\",\n  \"verdict\": \"SUPPORTED\",\n  \"why\": \"The context explicitly states that the store operates from 9 AM to 5 PM, which confirms the claim.\"\n}"
+    },
+    {
+      "fact": "The working days are Sunday to Saturday.",
+      "retrieved": [
+        {
+          "score": 0.6097065806388855,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.21117046475410461,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "gate_label": "SUPPORTED",
+      "p_yes": 0.8212950767876374,
+      "p_no": 0.1787049232123626,
+      "sim_max": 0.6097065806388855,
+      "uncertainty": 0.3574098464247253,
+      "reasoning": "{\n  \"final_claim\": \"The working days are Sunday to Saturday.\",\n  \"verdict\": \"SUPPORTED\",\n  \"why\": \"The context states that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating that these are indeed the working days.\"\n}"
+    }
+  ]
+}

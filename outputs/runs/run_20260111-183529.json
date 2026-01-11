@@ -1,0 +1,150 @@
+{
+  "query": "[EXPERIMENT] Mixed claims test (domain=all, k=1)",
+  "variant": "full",
+  "domain": null,
+  "timings": {
+    "l1_retrieval": 11.105383873000392,
+    "l2_slm": 310.61384525000176,
+    "l3_reasoner": 0.0,
+    "total": 321.8085094579983
+  },
+  "gold_counts": {
+    "SUPPORTED": 2,
+    "CONTRADICTED": 2,
+    "UNDER_SPECIFIED": 2
+  },
+  "per_fact": [
+    {
+      "fact": "Mahmudul Hasan (MH) CSE4232 Compiler Design 25 Mr.",
+      "retrieved": [
+        {
+          "score": 0.6637481451034546,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 1,
+          "text": "Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Academic Calender Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Events Dates Semester Begins 22/08/2025 First Assignment 19/09/2025, 20/09/2025 First Class Test 03/10/2025, 04/10/2025 Second Assignment 17/10/2025, 18/10/2025 Second Class Test 31/10/2025, 01/11/2025 Third Assignment 14/11/2025, 15/11/2025 Semester End 12/12/2025 Tentative Semester Final Exam 27/12/2025 Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "CONTRADICTED",
+      "p_yes": 0.14415614778155678,
+      "p_no": 0.8558438522184433,
+      "sim_max": 0.6637481451034546,
+      "uncertainty": 0.28831229556311355,
+      "gold_label": "CONTRADICTED",
+      "context": "- Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Sc\u2026",
+      "reasoning": null
+    },
+    {
+      "fact": "The next holiday is on 01/01/2027.",
+      "retrieved": [
+        {
+          "score": 0.25737571716308594,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 0,
+          "text": "B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 06/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 12/09/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 13/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 19/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 20/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 26/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 27/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 03/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 04/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 10/10/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 11/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 17/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 18/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 24/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 25/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 31/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 01/11/25 Saturday CSE4232 (STS) BREAK 07/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 08/11/25 Saturday CSE4232 (STS) BREAK 14/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 15/11/25 Saturday CSE4232 (STS) BREAK 21/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 22/11/25 Saturday CSE4232 (STS) BREAK 28/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 29/11/25 Saturday CSE4232 (STS) BREAK 05/12/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 06/12/25 Saturday CSE4232 (STS) BREAK 12/12/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 19/12/25 Friday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class 20/12/25 Saturday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.056623330091560495,
+      "p_no": 0.9433766699084395,
+      "sim_max": 0.25737571716308594,
+      "uncertainty": 0.11324666018312102,
+      "gold_label": "UNDER_SPECIFIED",
+      "context": "- B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK \u2026",
+      "reasoning": null
+    },
+    {
+      "fact": "Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 25 Mr.",
+      "retrieved": [
+        {
+          "score": 0.6623799800872803,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 1,
+          "text": "Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Academic Calender Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Events Dates Semester Begins 22/08/2025 First Assignment 19/09/2025, 20/09/2025 First Class Test 03/10/2025, 04/10/2025 Second Assignment 17/10/2025, 18/10/2025 Second Class Test 31/10/2025, 01/11/2025 Third Assignment 14/11/2025, 15/11/2025 Semester End 12/12/2025 Tentative Semester Final Exam 27/12/2025 Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.18924599521404478,
+      "p_no": 0.8107540047859553,
+      "sim_max": 0.6623799800872803,
+      "uncertainty": 0.37849199042808956,
+      "gold_label": "CONTRADICTED",
+      "context": "- Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Sc\u2026",
+      "reasoning": null
+    },
+    {
+      "fact": "For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance.",
+      "retrieved": [
+        {
+          "score": 0.42751312255859375,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 1,
+          "text": "Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Academic Calender Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Events Dates Semester Begins 22/08/2025 First Assignment 19/09/2025, 20/09/2025 First Class Test 03/10/2025, 04/10/2025 Second Assignment 17/10/2025, 18/10/2025 Second Class Test 31/10/2025, 01/11/2025 Third Assignment 14/11/2025, 15/11/2025 Semester End 12/12/2025 Tentative Semester Final Exam 27/12/2025 Program Co-ordinator School of Science and Technology Bangladesh Open University Dean School of Science and Technology Bangladesh Open University",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "SUPPORTED",
+      "p_yes": 0.7766140041574573,
+      "p_no": 0.22338599584254268,
+      "sim_max": 0.42751312255859375,
+      "uncertainty": 0.4467719916850854,
+      "gold_label": "SUPPORTED",
+      "context": "- Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib Hossen (RH) CSE42P5 Mobile Application Development Lab 18 Mr. Md. Rakib Hossen (RH) CSE4246 Project/Thesis CSE4227 Comprevensive Viva Voce Program Co-ordinator School of Sc\u2026",
+      "reasoning": null
+    },
+    {
+      "fact": "The patient should take 50 mg of Atorvastatin daily.",
+      "retrieved": [
+        {
+          "score": 0.0022407863289117813,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 0,
+          "text": "B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 06/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 12/09/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 13/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 19/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 20/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 26/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 27/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 03/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 04/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 10/10/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 11/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 17/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 18/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 24/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 25/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 31/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 01/11/25 Saturday CSE4232 (STS) BREAK 07/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 08/11/25 Saturday CSE4232 (STS) BREAK 14/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 15/11/25 Saturday CSE4232 (STS) BREAK 21/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 22/11/25 Saturday CSE4232 (STS) BREAK 28/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 29/11/25 Saturday CSE4232 (STS) BREAK 05/12/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 06/12/25 Saturday CSE4232 (STS) BREAK 12/12/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 19/12/25 Friday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class 20/12/25 Saturday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.0,
+      "p_no": 0.0,
+      "sim_max": 0.0022407863289117813,
+      "uncertainty": 1.0,
+      "gold_label": "UNDER_SPECIFIED",
+      "context": "- B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK \u2026",
+      "reasoning": null
+    },
+    {
+      "fact": "Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr.",
+      "retrieved": [
+        {
+          "score": 0.6764285564422607,
+          "doc_id": "class_routine.pdf",
+          "chunk_id": 0,
+          "text": "B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 06/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 12/09/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 13/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 19/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 20/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 26/09/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 27/09/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 03/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 04/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 10/10/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 11/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 17/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 18/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 24/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 25/10/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 31/10/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 01/11/25 Saturday CSE4232 (STS) BREAK 07/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 08/11/25 Saturday CSE4232 (STS) BREAK 14/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 15/11/25 Saturday CSE4232 (STS) BREAK 21/11/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 22/11/25 Saturday CSE4232 (STS) BREAK 28/11/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 29/11/25 Saturday CSE4232 (STS) BREAK 05/12/25 Friday CSE4246 (Supervisor) CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 06/12/25 Saturday CSE4232 (STS) BREAK 12/12/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) CSE42P5 (RH) 19/12/25 Friday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class 20/12/25 Saturday Makeup Class Makeup Class Makeup Class BREAK Makeup Class Makeup Class N.B. For any changes in the schedule, concerned coordinator/class teachers are requested to inform the students and the Dean/Program Co-ordinator, School of Science and Technology, BOU in advance. Course Code Title Number of Class Course Teacher CSE4231 Cryptograpy and Network Security 24 Mr. Md. Mahmudul Hasan (MH) CSE4232 Compiler Design 24 Mr. Shah Md. Tanvir Siddique (STS) CSE42P3 Compiler Design Lab 10 Mr. Shah Md. Tanvir Siddique (STS) CSE4234 Mobile Application Development 24 Mr. Md. Rakib",
+          "source_path": "data/raw/university/class_routine.pdf",
+          "domain": "university",
+          "tags": []
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.20747176921476623,
+      "p_no": 0.7925282307852337,
+      "sim_max": 0.6764285564422607,
+      "uncertainty": 0.41494353842953247,
+      "gold_label": "SUPPORTED",
+      "context": "- B. Sc in Computer Science and Engineering Program 2019-2020 Session 232 Term Fourth Year Second Semester Class Routine Date of Commencement: 22 August 2025 Study Center: Dhaka Regional Center Contact Person Dr. Mohammed Mamunur Rashid Professor and Program Coordinator School of Science and Technology Bangladesh Open University Phone/Whatsapp: 01716115139 email:mamunur@bou.ac.bd Date Day 08:30 - 10:00 10:00 - 11:30 11:30 - 13:00 13:00 - 14:00 14:00 - 15:30 15:30 - 17:00 22/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 23/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK 29/08/25 Friday CSE4231 (MH) CSE4234 (RH) BREAK CSE42P5 (RH) 30/08/25 Saturday CSE4232 (STS) CSE42P3 (STS) BREAK \u2026",
+      "reasoning": null
+    }
+  ]
+}

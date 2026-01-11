@@ -1,0 +1,7 @@
+{
+  "query": "and term?",
+  "query_context": "",
+  "llm_answer": "INSUFFICIENT_CONTEXT",
+  "atomic_facts": [],
+  "per_fact": []
+}

@@ -1,0 +1,260 @@
+{
+  "query": "What are the store working hours?",
+  "llm_answer": "Store working hours can vary widely depending on the type of store, location, and local regulations. Typically, many retail stores operate during the following hours:\n\n- **Monday to Friday:** 9 AM to 9 PM\n- **Saturday:** 9 AM to 9 PM\n- **Sunday:** 10 AM to 6 PM\n\nHowever, some stores may open earlier or close later, and some may have reduced hours on weekends or holidays. It's best to check the specific store's website or contact them directly for their exact hours. If you have a particular store in mind, let me know, and I can help you find more specific information!",
+  "atomic_facts": [
+    "Store working hours can vary widely depending on the type of store.",
+    "Store working hours can vary widely depending on location.",
+    "Store working hours can vary widely depending on local regulations.",
+    "Many retail stores operate Monday to Friday from 9 AM to 9 PM.",
+    "Many retail stores operate on Saturday from 9 AM to 9 PM.",
+    "Many retail stores operate on Sunday from 10 AM to 6 PM.",
+    "Some stores may open earlier than the typical hours.",
+    "Some stores may close later than the typical hours.",
+    "Some stores may have reduced hours on weekends.",
+    "Some stores may have reduced hours on holidays.",
+    "It is best to check a specific store's website for exact hours.",
+    "It is best to contact a specific store directly for exact hours."
+  ],
+  "per_fact": [
+    {
+      "fact": "Store working hours can vary widely depending on the type of store.",
+      "retrieved": [
+        {
+          "score": 0.5882421135902405,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.21054507791996002,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.01235090009868145,
+      "reasoning": "{\n  \"final_claim\": \"Store working hours can vary widely depending on the type of store.\",\n  \"verdict\": \"REJECTED\",\n  \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating fixed working hours rather than varying hours.\"\n}"
+    },
+    {
+      "fact": "Store working hours can vary widely depending on location.",
+      "retrieved": [
+        {
+          "score": 0.5764473676681519,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.23724760115146637,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.008291142992675304,
+      "reasoning": "{\"final_claim\": \"Store working hours can vary widely depending on location.\", \"verdict\": \"REJECTED\", \"why\": \"The context states that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating consistent working hours regardless of location.\"}"
+    },
+    {
+      "fact": "Store working hours can vary widely depending on local regulations.",
+      "retrieved": [
+        {
+          "score": 0.5659467577934265,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.27318626642227173,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.00816282443702221,
+      "reasoning": "{\"final_claim\": \"Store working hours can vary widely depending on local regulations.\", \"verdict\": \"REJECTED\", \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating fixed working hours.\"}"
+    },
+    {
+      "fact": "Many retail stores operate Monday to Friday from 9 AM to 9 PM.",
+      "retrieved": [
+        {
+          "score": 0.8927950263023376,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.09951556473970413,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.009379870258271694,
+      "reasoning": "{\n  \"final_claim\": \"Many retail stores operate Monday to Friday from 9 AM to 9 PM.\",\n  \"verdict\": \"REJECTED\",\n  \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, Sunday to Saturday, which contradicts the claim about operating hours.\"\n}"
+    },
+    {
+      "fact": "Many retail stores operate on Saturday from 9 AM to 9 PM.",
+      "retrieved": [
+        {
+          "score": 0.9031689167022705,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.08442112058401108,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.013149903155863285,
+      "reasoning": "{\"final_claim\": \"Many retail stores operate on Saturday from 9 AM to 9 PM.\", \"verdict\": \"REJECTED\", \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, which contradicts the claim about operating until 9 PM.\"}"
+    },
+    {
+      "fact": "Many retail stores operate on Sunday from 10 AM to 6 PM.",
+      "retrieved": [
+        {
+          "score": 0.904251217842102,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.05563373118638992,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.008845063857734203,
+      "reasoning": "{\n  \"final_claim\": \"Many retail stores operate on Sunday from 10 AM to 6 PM.\",\n  \"verdict\": \"REJECTED\",\n  \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, which contradicts the claim about operating from 10 AM to 6 PM.\"\n}"
+    },
+    {
+      "fact": "Some stores may open earlier than the typical hours.",
+      "retrieved": [
+        {
+          "score": 0.6775518655776978,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.11679849028587341,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.036816176027059555,
+      "reasoning": "{\"final_claim\": \"Some stores may open earlier than the typical hours.\", \"verdict\": \"INSUFFICIENT\", \"why\": \"The context does not provide information about other stores' operating hours, only that this specific store operates from 9 AM to 5 PM.\"}"
+    },
+    {
+      "fact": "Some stores may close later than the typical hours.",
+      "retrieved": [
+        {
+          "score": 0.6134793758392334,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.15311911702156067,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.03683727979660034,
+      "reasoning": "{\"final_claim\": \"Some stores may close later than the typical hours.\", \"verdict\": \"REJECTED\", \"why\": \"The context specifies that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating fixed hours without mention of later closing times.\"}"
+    },
+    {
+      "fact": "Some stores may have reduced hours on weekends.",
+      "retrieved": [
+        {
+          "score": 0.6940760016441345,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.1332705169916153,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.030874643474817276,
+      "reasoning": "{\"final_claim\": \"Some stores may have reduced hours on weekends.\", \"verdict\": \"REJECTED\", \"why\": \"The context states that the store operates from 9 AM to 5 PM, Sunday to Saturday, indicating no reduced hours on weekends.\"}"
+    },
+    {
+      "fact": "Some stores may have reduced hours on holidays.",
+      "retrieved": [
+        {
+          "score": 0.5462658405303955,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.18208611011505127,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.05026958882808685,
+      "reasoning": "{\"final_claim\": \"Some stores may have reduced hours on holidays.\", \"verdict\": \"INSUFFICIENT\", \"why\": \"The provided context does not mention anything about holiday hours or reduced hours on holidays.\"}"
+    },
+    {
+      "fact": "It is best to check a specific store's website for exact hours.",
+      "retrieved": [
+        {
+          "score": 0.6405431032180786,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.034464508295059204,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.16096314787864685,
+      "reasoning": "{\"final_claim\": \"It is best to check a specific store's website for exact hours.\", \"verdict\": \"SUPPORTED\", \"why\": \"The claim suggests checking the store's website for exact hours, which is a reasonable action since store hours can vary and may not be fully detailed in the provided context.\"}"
+    },
+    {
+      "fact": "It is best to contact a specific store directly for exact hours.",
+      "retrieved": [
+        {
+          "score": 0.56963711977005,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.059734635055065155,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "slm_status": "UNCERTAIN",
+      "slm_yes_prob": 0.04562944918870926,
+      "reasoning": "{\"final_claim\": \"It is best to contact a specific store directly for exact hours.\", \"verdict\": \"SUPPORTED\", \"why\": \"The store operates from 9 AM to 5 PM, Sunday to Saturday, but contacting the store directly can provide the most accurate and up-to-date information.\"}"
+    }
+  ]
+}

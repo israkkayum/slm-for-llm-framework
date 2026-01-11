@@ -1,0 +1,57 @@
+{
+  "query": "What are the store working hours?",
+  "query_context": "- The store operates from 9 AM to 5 PM, Sunday to Saturday.\n- Employees must follow HR leave policy as stated in section 3.",
+  "llm_answer": "The store operates from 9 AM to 5 PM, Sunday to Saturday.",
+  "atomic_facts": [
+    "The store operates from 9 AM to 5 PM.",
+    "The store is open Sunday to Saturday."
+  ],
+  "per_fact": [
+    {
+      "fact": "The store operates from 9 AM to 5 PM.",
+      "retrieved": [
+        {
+          "score": 0.9118376970291138,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.06847691535949707,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.5297364323307098,
+      "p_no": 0.47026356766929023,
+      "sim_max": 0.9118376970291138,
+      "uncertainty": 0.9405271353385805,
+      "reasoning": "{\n  \"final_claim\": \"The store operates from 9 AM to 5 PM.\",\n  \"verdict\": \"SUPPORTED\",\n  \"why\": \"The claim is directly supported by the provided context.\"\n}"
+    },
+    {
+      "fact": "The store is open Sunday to Saturday.",
+      "retrieved": [
+        {
+          "score": 0.8090997934341431,
+          "doc_id": "handbook",
+          "chunk_id": 0,
+          "text": "The store operates from 9 AM to 5 PM, Sunday to Saturday."
+        },
+        {
+          "score": 0.08390365540981293,
+          "doc_id": "handbook",
+          "chunk_id": 1,
+          "text": "Employees must follow HR leave policy as stated in section 3."
+        }
+      ],
+      "gate_label": "UNDER_SPECIFIED",
+      "p_yes": 0.49610622648276287,
+      "p_no": 0.5038937735172372,
+      "sim_max": 0.8090997934341431,
+      "uncertainty": 0.9922124529655257,
+      "reasoning": "{\n  \"final_claim\": \"The store is open Sunday to Saturday.\",\n  \"verdict\": \"SUPPORTED\",\n  \"why\": \"The context explicitly states that the store operates from 9 AM to 5 PM, Sunday to Saturday.\"\n}"
+    }
+  ]
+}

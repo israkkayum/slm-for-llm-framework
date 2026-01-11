@@ -1,0 +1,27 @@
+[project]
+name = "llm-hallucination"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv",
+  "numpy",
+  "pandas",
+  "tqdm",
+  "faiss-cpu",
+  "sentence-transformers",
+  "transformers",
+  "torch",
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "matplotlib",
+  "scikit-learn",
+  "openai"
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
